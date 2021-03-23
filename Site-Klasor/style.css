@@ -1,0 +1,7 @@
+section #hero {
+    background-image: linear-gradient(rgba(0,0,0, 0.9),rgba(0,0,0, 0.9), url(/img/main_bg.jpg)) ;
+    background-size: cover;
+}
+#hero .container {
+    height: 50vh;
+}
