@@ -1,3 +1,25 @@
+body {
+    background-color:rgb(231, 231, 231);
+}
+.navbar {
+    opacity: 0.9 !important;
+}
+.navbar-brand img{
+    width: 100px;
+    height: 85px;
+}
+.nav-item a {
+    font-size: 20px;
+}
+.nav-item a:hover{
+    background: black;
+    color: #fff !important;
+    border-radius: 4px;
+}
+i {
+    cursor: pointer !important;
+}
+
 /*Dark background*/
 .dark-bg {
     background-image: linear-gradient(rgba(0,0,0, .9),rgba(0,0,0, .9)),url('./img/main_bg.jpg');
@@ -50,5 +72,9 @@ section#latest .latest-item:hover .overlay{
 section#latest .latest-item:hover i {
     opacity: 1;
     transform: none;
+}
+iframe{
+    margin-top: 100px;
+    height: 400px;
 }
 
