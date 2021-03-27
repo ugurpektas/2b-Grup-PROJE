@@ -2,7 +2,7 @@ body {
     background-color:rgb(231, 231, 231);
 }
 .navbar {
-    opacity: 0.9 !important;
+    background: rgb(255, 123, 0);
 }
 .navbar-brand img{
     width: 100px;
@@ -76,5 +76,52 @@ section#latest .latest-item:hover i {
 iframe{
     margin-top: 100px;
     height: 400px;
+}
+
+/*ANIMASYONLU KARTLAR*/
+.card {
+    position: relative;
+    transition: 0.5s;
+    background: linear-gradient(45deg,#ffbe00,#ff0058);
+}
+.dark-bg .card:hover{
+    transform: translateY(-20px);
+}
+.dark-bg .card::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#ffbe00,#ff0058);
+    filter: blur(30px);
+}
+.dark-bg .card .dairespan {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(0, 0, 0, .6);
+    z-index: 2;
+}
+.dark-bg .card .card-body {
+    position: relative;
+    z-index: 5;
+}
+.dark-bg .card .card-body a{
+    color: #fff;
+}
+.card-body ul {
+    display: flex;
+    justify-content: flex-end;
+}
+.card-body .bi {
+    font-size: 25px;
+}
+.card-body .bi:hover {
+    color: black;
+    cursor: pointer;
 }
 
